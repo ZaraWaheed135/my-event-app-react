@@ -1,10 +1,35 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+}
+
+.text-style {
+  margin-top: "5%";
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.content {
+  font-size: "larger";
+  padding: "5%";
+}
+
+input {
+  background: url("http://kodyrabatowe.wp.pl/img/ico/search_gr.png") top left
+    no-repeat;
+  height: 30px;
+  padding-left: 25px;
+}
+
+.list-item span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media (prefers-reduced-motion: no-preference) {
