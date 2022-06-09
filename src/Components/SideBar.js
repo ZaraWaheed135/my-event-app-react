@@ -17,20 +17,21 @@ import { ImageList, ImageListItem, Image } from '@mui/material';
 import logo from '../logo123.svg';
 import { Download } from '@mui/icons-material';
 import { fontFamily } from '@mui/system';
+import '../App.css';
 
 const drawerWidth = 200;
 
 export default function PermanentDrawerLeft() {
   return (
-    <Box sx={{ display: 'flex'}}>
+    <Box>
       <CssBaseline />
       
       <Drawer
         sx={{
-          overflow: "hidden",
           width: drawerWidth,
           flexShrink: 0,
           '& .MuiDrawer-paper': {
+            overflowX: 'hidden',
             width: drawerWidth,
             boxSizing: 'border-box',
             backgroundColor: 'red',
@@ -43,14 +44,14 @@ export default function PermanentDrawerLeft() {
        
         <Divider />
         <List>
-        <ListItem sx={{marginLeft: "8%"}}>
+        <ListItem sx={{marginLeft: "7%"}}>
         <img 
         src={logo}
         alt="logo"
         height="50%"
         width="70%"
         margin-top="8%"
-        margin-left="10%"
+        margin-left="8%"
         loading="lazy"
         align-content="center"
       /></ListItem>

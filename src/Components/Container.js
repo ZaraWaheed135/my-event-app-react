@@ -69,10 +69,10 @@ export default function SimpleContainer() {
     <React.Fragment>
       <CssBaseline />
 
-      <Box sx={{ bgcolor: "white", height: "100vh" }}>
+      <Box sx={{ bgcolor: "white", height: "100vh", width: 'auto' }}>
         <div>
           <Box
-           
+           id= "body-card"
             sx={{
               display: "flex",
               bgcolor: "white",

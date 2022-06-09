@@ -11,33 +11,33 @@ import CustomizedMenus from './DropdownMenu';
 import Action from './Action';
 
 const columns = [
-  { id: 'icon', label: '', minWidth: 170 },
+  { id: 'icon', label: '', minWidth: 'auto' },
 
-  { id: 'Date', label: 'Date', minWidth: 170 },
-  { id: 'Event', label: 'Event', minWidth: 100 },
+  { id: 'Date', label: 'Date', minWidth: 'auto'},
+  { id: 'Event', label: 'Event', minWidth: 'auto' },
   {
     id: 'Track',
     label: 'Track Name',
-    minWidth: 120,
+    minWidth: 'auto',
     align: 'right',
     format: (value) => value.toLocaleString('en-US'),
   },
   {
     id: 'OnSaleDate',
     label: 'On Sale Date',
-    minWidth: 120,
+    minWidth: 'auto',
     align: 'right',
     format: (value) => value.toLocaleString('en-US'),
   },
   {
     id: 'Status',
     label: 'Status',
-    minWidth: 120,
+    minWidth: 'auto',
     align: 'right',
     format: (value) => value.toFixed(2),
   },
   { id: 'Action',
-  label: 'Action'},
+  label: '', minWidth: 'auto',marginTop: "2%"},
 ];
 
 function createData(icon, Date, Event, Track, OnSaleDate, Action) {
@@ -49,20 +49,20 @@ function createData(icon, Date, Event, Track, OnSaleDate, Action) {
 
 const rows = [
   createData(<CustomizedMenus/>,'India', 'IN', 1324171354, 3287263, <Action/>),
-  createData(<CustomizedMenus/>,'China', 'CN', 1403500365, 9596961),
-  createData(<CustomizedMenus/>,'Italy', 'IT', 60483973, 301340),
-  createData(<CustomizedMenus/>,'United States', 'US', 327167434, 9833520),
-  createData(<CustomizedMenus/>,'Canada', 'CA', 37602103, 9984670),
-  createData(<CustomizedMenus/>,'Australia', 'AU', 25475400, 7692024),
-  createData(<CustomizedMenus/>,'Germany', 'DE', 83019200, 357578),
-  createData(<CustomizedMenus/>,'Ireland', 'IE', 4857000, 70273),
-  createData(<CustomizedMenus/>,'Mexico', 'MX', 126577691, 1972550),
-  createData(<CustomizedMenus/>,'Japan', 'JP', 126317000, 377973),
-  createData(<CustomizedMenus/>,'France', 'FR', 67022000, 640679),
-  createData(<CustomizedMenus/>,'United Kingdom', 'GB', 67545757, 242495),
-  createData(<CustomizedMenus/>,'Russia', 'RU', 146793744, 17098246),
-  createData(<CustomizedMenus/>,'Nigeria', 'NG', 200962417, 923768),
-  createData(<CustomizedMenus/>,'Brazil', 'BR', 210147125, 8515767),
+  createData(<CustomizedMenus/>,'China', 'CN', 1403500365, 9596961, <Action/>),
+  createData(<CustomizedMenus/>,'Italy', 'IT', 60483973, 301340, <Action/>),
+  createData(<CustomizedMenus/>,'United States', 'US', 327167434, 9833520, <Action/>),
+  createData(<CustomizedMenus/>,'Canada', 'CA', 37602103, 9984670, <Action/>),
+  createData(<CustomizedMenus/>,'Australia', 'AU', 25475400, 7692024,<Action/>),
+  createData(<CustomizedMenus/>,'Germany', 'DE', 83019200, 357578, <Action/>),
+  createData(<CustomizedMenus/>,'Ireland', 'IE', 4857000, 70273, <Action/>),
+  createData(<CustomizedMenus/>,'Mexico', 'MX', 126577691, 1972550, <Action/>),
+  createData(<CustomizedMenus/>,'Japan', 'JP', 126317000, 377973,<Action/>),
+  createData(<CustomizedMenus/>,'France', 'FR', 67022000, 640679, <Action/>),
+  createData(<CustomizedMenus/>,'United Kingdom', 'GB', 67545757, 242495,<Action/>),
+  createData(<CustomizedMenus/>,'Russia', 'RU', 146793744, 17098246, <Action/>),
+  createData(<CustomizedMenus/>,'Nigeria', 'NG', 200962417, 923768, <Action/>),
+  createData(<CustomizedMenus/>,'Brazil', 'BR', 210147125, 8515767, <Action/>),
 ];
 
 export default function StickyHeadTable() {
@@ -79,14 +79,14 @@ export default function StickyHeadTable() {
   };
 
   return (
-    <Paper sx={{ width: '100%', overflow: 'hidden', borderStyle: "none"}}>
-      <TableContainer sx={{ maxHeight: 540 }}>
+    <Paper id='table-cell'  sx={{ width: 'auto', overflow: 'hidden', borderStyle: "none"}}>
+      <TableContainer className='element' sx={{ maxHeight: "auto" }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
             <TableRow>
               {columns.map((column) => (
                 <TableCell
-                sx={{padding: "5%", fontWeight: "bold"}}
+                sx={{padding: "5%", fontWeight: "bold", fontSize: '100%', alignContent: 'left'}}
                   key={column.id}
                   align={column.align}
                   style={{ minWidth: column.minWidth }}

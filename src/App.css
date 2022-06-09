@@ -28,6 +28,17 @@ input {
   font-size: 1.2rem;
 }
 
+
+.element {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+}
+
+.element::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -61,3 +72,122 @@ input {
     transform: rotate(360deg);
   }
 }
+
+
+/* responsive media queries */
+
+@media screen and (max-width: 1220px) {
+  #body-card {
+    background-color: blue;
+    margin-left: 21%;
+    width: 74%;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  #body-card {
+    background-color: orange;
+    margin-left: 21%;
+    width: 74%;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  #body-card {
+    background-color: green;
+    margin-left: 21%;
+    width: 74%;
+
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  #body-card {
+    background-color: gold;
+    margin-left: 22%;
+    width: 72%;
+  }
+  #table-cell {
+    width: 100%
+  }
+}
+
+
+@media screen and (max-width: 1010px) {
+  #body-card {
+    background-color: firebrick;
+    margin-left: 23%;
+    width: 70%;
+  }
+  #table-cell {
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #body-card {
+    background-color: pink;
+    margin-left: 24%;
+    width: 70%;
+  }
+  #table-cell {
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 965px) {
+  #body-card {
+    background-color: darkmagenta;
+    margin-left: 26%;
+    width: 67%;
+  }
+  #table-cell {
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 880px) {
+  #body-card {
+    background-color: rgb(139, 0, 0);
+    margin-left: 27%;
+    width: 65%;
+  }
+  #table-cell {
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #body-card {
+    background-color: rgb(139, 0, 53);
+    margin-left: 29%;
+    width: 64%;
+  }
+  #table-cell {
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 785px) {
+  #body-card {
+    background-color: rgb(21, 139, 0);
+    margin-left: 30%;
+    width: 63%;
+  }
+  #table-cell {
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 775px) {
+  #body-card {
+    background-color: rgb(21, 139, 0);
+    margin-left: 30%;
+    width: 62%;
+  }
+  #table-cell {
+    width: 100%;
+    padding: 0%
+  }
+}
+
