@@ -76,13 +76,36 @@ input {
 
 /* responsive media queries */
 
+@media screen and (max-width: 9999px) {
+  #res-drawer {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1220px) {
   #body-card {
     background-color: blue;
     margin-left: 21%;
     width: 74%;
   }
+
+  #typo-event {
+    font-size: medium;
+  }
 }
+
+@media screen and (max-width: 1130px) {
+  #divider-v {
+    margin-left: 55%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #divider-v {
+    margin-left: 53%;
+  }
+}
+
 
 @media screen and (max-width: 1075px) {
   #body-card {
@@ -99,6 +122,9 @@ input {
     width: 74%;
 
   }
+  #typo-event {
+    font-size: medium;
+  }
 }
 
 @media screen and (max-width: 1035px) {
@@ -109,6 +135,9 @@ input {
   }
   #table-cell {
     width: 100%
+  }
+  #divider-v {
+    margin-left: 51%;
   }
 }
 
@@ -122,7 +151,14 @@ input {
   #table-cell {
     width: 100%
   }
+  #divider-v {
+    margin-left: 49%;
+  }
+  #typo-event {
+    font-size: 80%;
+  }
 }
+
 
 @media screen and (max-width: 990px) {
   #body-card {
@@ -133,27 +169,90 @@ input {
   #table-cell {
     width: 100%
   }
+  #divider-v {
+    margin-left: 47%;
+  }
+  
+
+  #search-icon {
+    font-size: larger;
+  }
 }
 
 @media screen and (max-width: 965px) {
   #body-card {
     background-color: darkmagenta;
-    margin-left: 26%;
-    width: 67%;
+    margin-left: 25%;
+    width: 68%;
   }
   #table-cell {
     width: 100%
+  }
+  #edit-icon {
+    font-size: x-large;
+  }
+  #event-icon {
+    font-size: x-large;
+  }
+  #file-icon {
+    font-size: x-large;
+  }
+
+
+  #divider-v {
+    margin-left: 45%;
+  }
+
+  #typo-event {
+    font-size: 70%;
   }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 965px) {
+  #divider-v {
+    margin-left: 45%;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  #divider-v {
+    margin-left: 43%;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  #divider-v {
+    margin-left: 41%;
+  }
+}
+
+@media screen and (max-width: 895px) {
   #body-card {
     background-color: rgb(139, 0, 0);
     margin-left: 27%;
-    width: 65%;
+    width: 68%;
   }
   #table-cell {
     width: 100%
+  }
+
+  #typo-event {
+    font-size: 70%;
+  }
+  #divider-v {
+    margin-left: 38%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  #divider-v {
+    margin-left: 36%;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  #divider-v {
+    margin-left: 34%;
   }
 }
 
@@ -166,7 +265,14 @@ input {
   #table-cell {
     width: 100%
   }
+  #typo-event {
+    font-size: 70%;
+  }
+  #divider-v {
+    margin-left: 28%;
+  }
 }
+
 
 @media screen and (max-width: 785px) {
   #body-card {
@@ -177,6 +283,12 @@ input {
   #table-cell {
     width: 100%
   }
+  #typo-event {
+    font-size: 70%;
+  }
+  #divider-v {
+    margin-left: 26%;
+  }
 }
 
 @media screen and (max-width: 775px) {
@@ -185,9 +297,92 @@ input {
     margin-left: 30%;
     width: 62%;
   }
+  #t-body {
+    font-size:small;
+    padding: 10%;
+  }
   #table-cell {
     width: 100%;
-    padding: 0%
   }
+  #typo-event {
+    font-size: 80%;
+  }
+  #divider-v {
+    margin-left: 22%;
+  }
+}
+@media screen and (max-width: 770px) {
+
+  #body-card {
+    background-color: rgb(21, 139, 0);
+    margin-left: 30%;
+    width: 67%;
+  }
+  #t-body {
+    font-size:small;
+    padding: 10%;
+  }
+  #table-cell {
+    width: 100%;
+  }
+  #typo-event {
+    font-size: 80%;
+  }
+  #divider-v {
+    margin-left: 38%;
+  }
+  #edit-icon {
+    font-size: large;
+  }
+  #event-icon {
+    font-size: large;
+  }
+  #file-icon {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 710px) {
+
+  #body-card {
+    background-color: rgb(21, 139, 0);
+    margin-left: 30%;
+    width: 69%;
+  }
+  #t-body {
+    font-size:small;
+    padding: 10%;
+  }
+  #table-cell {
+    width: 100%;
+  }
+  #typo-event {
+    font-size: 80%;
+  }
+  #divider-v {
+    margin-left: 36%;
+  }
+}
+@media screen and (max-width: 599px) {
+  #side-bar {
+    display: none;
+  }
+  #body-card {
+    background-color: rgb(21, 139, 0);
+    margin-left: 5%;
+    width: 90%;
+  }
+  #typo-event {
+    font-size: 100%;
+  }
+  #t-body {
+    font-size:small;
+    padding: 10%;
+  }
+  #add-icon {
+    margin-left: 50%;
+    position: relative;
+  }
+
 }
 

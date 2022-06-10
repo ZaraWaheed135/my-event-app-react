@@ -87,6 +87,7 @@ export default function SimpleContainer() {
             <Box sx={{ flexGrow: 1}}>
               <Toolbar>
                 <Typography 
+                id="typo-event"
                   variant="h5"
                   noWrap
                   component="div"
@@ -104,6 +105,7 @@ export default function SimpleContainer() {
                 </Typography>
                 <Search>
                   <SearchIconWrapper
+                  id="search-icon-w"
                     sx={{
                       backgroundColor: "#f7f7f7",
                       paddingRight: "5%",
@@ -111,10 +113,12 @@ export default function SimpleContainer() {
                     }}
                   >
                     <SearchIcon
+                    id="search-icon"
                       sx={{ color: "black", backgroundColor: "#f7f7f7" }}
                     />
                   </SearchIconWrapper>
                   <InputBase
+                  id="search-input"
                     sx={{
                       marginLeft: "22%",
                       backgroundColor: "#f7f7f7",
@@ -129,8 +133,8 @@ export default function SimpleContainer() {
                     inputProps={{ "aria-label": "search" }}
                   />
                 </Search>
-                <Divider orientation="vertical" flexItem sx={{marginLeft: "57%"}}/>
-                <Add sx={{position: "absolute", right: 70}}>
+                <Divider id='divider-v' orientation="vertical" flexItem sx={{marginLeft: "57%"}}/>
+                <Add id='add-icon' sx={{position: "absolute", right: 70}}>
                   <AddIconWrapper>
                     <AddIcon sx={{color: "red", fontSize: 50}} />
                   </AddIconWrapper>

@@ -96,7 +96,7 @@ export default function StickyHeadTable() {
               ))}
             </TableRow>
           </TableHead>
-          <TableBody>
+          <TableBody id='t-body'>
             {rows
               .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
               .map((row) => {

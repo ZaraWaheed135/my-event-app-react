@@ -23,7 +23,7 @@ const drawerWidth = 200;
 
 export default function PermanentDrawerLeft() {
   return (
-    <Box>
+    <Box id='side-bar'>
       <CssBaseline />
       
       <Drawer
