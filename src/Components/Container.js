@@ -1,18 +1,27 @@
 import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import { flexbox } from "@mui/system";
 import SearchIcon from "@mui/icons-material/Search";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
-import { AppBar, Divider } from "@mui/material";
+import { Divider } from "@mui/material";
 import { Toolbar } from "@mui/material";
 import { Typography } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import StickyHeadTable from "./DataTable";
+import {Link, Routes, Route, useNavigate} from 'react-router-dom';
 
 export default function SimpleContainer() {
+  const navigate = useNavigate();
+
+  const navigateToContacts = () => {
+    // 👇️ navigate to /contacts
+    navigate('/contacts');
+  };
+  const navigateHome = () => {
+    // 👇️ navigate to /
+    navigate('/new');
+  };
   const Search = styled("div")(({ theme }) => ({
     position: "relative",
     borderRadius: theme.shape.borderRadius,
@@ -136,7 +145,7 @@ export default function SimpleContainer() {
                 <Divider id='divider-v' orientation="vertical" flexItem sx={{marginLeft: "57%"}}/>
                 <Add id='add-icon' sx={{position: "absolute", right: 70}}>
                   <AddIconWrapper>
-                    <AddIcon sx={{color: "red", fontSize: 50}} />
+                  <Link  to="/new"><AddIcon type='button' sx={{color: "red", fontSize: 50}} /></Link>
                   </AddIconWrapper>
                 </Add>
               </Toolbar>
